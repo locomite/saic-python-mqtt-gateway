@@ -653,8 +653,8 @@ def process_arguments() -> Configuration:
                                                         + 'Default is saic', default='saic', dest='mqtt_topic',
                             required=False, action=EnvDefault, envvar='MQTT_TOPIC')
         parser.add_argument('-s', '--saic-uri', help='The SAIC uri. Environment Variable: SAIC_URI Default is the'
-                                                     + ' European Production Endpoint: https://tap-eu.soimt.com',
-                            default='https://tap-eu.soimt.com', dest='saic_uri', required=False, action=EnvDefault,
+                                                     + ' Australian Production Endpoint: https://tap-au.soimt.com',
+                            default='https://tap-au.soimt.com', dest='saic_uri', required=False, action=EnvDefault,
                             envvar='SAIC_URI')
         parser.add_argument('-u', '--saic-user',
                             help='The SAIC user name. Environment Variable: SAIC_USER', dest='saic_user', required=True,
